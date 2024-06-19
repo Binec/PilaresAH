@@ -1,0 +1,18 @@
+#titulo{
+    color: red;
+    font-size: 35pt;
+    font-family: sans-serif;
+}
+.subt{
+    width: 600px;
+    font-size: 18pt;
+}
+.azul{
+    color: blue;
+}
+.amarillo{
+   color: yellow; 
+}
+.verde{
+    color: green;
+}

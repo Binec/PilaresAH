@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto";
+    
+}
+.d-flex-c{
+    display: flex;
+    flex-direction: column;  
+}
+.d-flex-r{
+    display: flex;
+    flex-direction: row;  
+}
+#m-container{
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 50px 0 50px;
+}
+#header{
+    background-image: url(../Assets/Banner.jpg);
+    color: white;
+    justify-content: space-between;
+    height: 280px;  
+}
+#logos{
+}
+
+#content{
+    padding-top: 25px;
+}
+#categoria{
+    height: 100px;
+    width: 450px;
+    background-image: url(../Assets/ImgCategoria.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin: 13px 0 13px 0;
+}
+#categoria:active{
+    color:#991C46;
+}
+#categoria:focus{
+    color:#991C46;
+}
+#Talleres{
+    man-width: 800px;
+    min-width: 300px
+}
+#t-searcher{
+    display: flex;
+    align-items: center;
+}
+#searcher{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+#input-buscador{
+    width: 415px;
+    height: 32px;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+.btn-edit{
+    border: 3px solid #9c9c9c;
+}
+#talleres_container{
+    background-color: #FAFAFA;
+    border-radius: 16px;
+    padding: 0px 10px 30px 10px;
+    overflow-y: scroll;
+    width: 990px;
+    max-height: 525px;
+    margin-top: 15px;
+}
+#taller{
+    margin-top: 30px;
+}
+#contacto{
+    margin-top: 15px;
+}
+#t-descripcion{
+    margin-left: 15px;
+    width: 430px;
+}
+#horarios{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+.btn-ins{
+    background-color: #155D4F;
+    color: white;
+    padding: 10px;
+    width: 132px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+.tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+@media only screen and (max-width: 431px) {
+   #m-container{
+    width:90vw;
+    padding:0px;
+    height: 100vh;
+   }
+   #header{
+    height:120px;
+    width: 120%;
+    margin-left: -25px;
+    padding-left: 25px;
+   }
+   #logo-p{
+    width: 150px;
+   }
+   #selec_cat
+   {
+    display: flex;
+    flex-direction: row;
+   }
+   #N-Pilares{
+    font-size: 12pt;
+   }
+   #content{
+    flex-direction: column;
+   }
+   #cat-cont{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+   }
+   #cat1{
+    display: flex;
+   }
+   #cat2{
+    display: flex;
+   }
+   #categoria{
+    width: 100px;
+    height: 45px;
+    border-radius: 15px;
+    background-image: none;
+    color: black;
+    font-size: 8pt;
+    padding: 0 10px 0 10px ;
+   }
+   #categoria:hover{
+    background-color: #991C46;
+    color: white;
+    cursor: pointer;
+   }
+   #Talleres{
+    width: 95vw;
+   }
+   #input-buscador{
+    width: 350px;
+   }
+   #talleres_container{
+    width: 370px;
+   }
+   #img-taller{
+    width: 80px;
+    height: 50px;
+   }
+   #t-descripcion{
+    width: 150px;
+    margin-left: 10px;
+   }
+   #t-taller{
+    font-size: 12pt;
+   }
+   #t-tallerista{
+    font-size: 9pt;
+   }
+
+   #d-taller{
+    font-size: 9pt;
+    display: none;
+   }
+   #contacto{
+    display:none;
+   }
+   #horarios{
+    font-size: 8pt;
+   }
+   .btn-ins{
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+   }
+}
+
+
+
+
+/*.btn{
+    display:inline-block;
+    background:#ccc;
+    line-height:36px;
+    padding: 0 10px;
+    cursor:pointer;
+  }
+  #taller{
+    display:none
+  }
+  #taller.active{
+    display:block
+  }*/

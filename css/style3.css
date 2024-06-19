@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+body{
+    font-family: "Roboto";
+}
+#header{
+    background-image: url("../Assets/Banner.jpg");
+    height: 280px;
+    width: 100%;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logos {
+       display: flex;
+       flex-direction: row;
+}
+#nombrepilares{
+    width: 400px;
+}
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto 0;
+    max-width: 1460px;
+    padding-top: 30px;
+}
+#talleres{
+    width: 100%;
+    margin: 0% auto;
+}
+.btn-edit{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#taller{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 25px;
+}
+#taller-content{
+    display: flex;
+    flex-direction: column;
+}
+#nombrehorario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+#mail{
+    display: flex;
+    flex-direction: row;
+}
+#numero{
+    display: flex;
+    flex-direction: row;
+}
+.p-contact{
+    margin-left: 15px;
+}
+.btn-inscripcion{
+    height: 50px;
+    margin-top: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #155D4F;
+    color: white;
+    border-radius: 10%;
+}
+#categoria{
+    background-image: url(../Assets/Imag\ Categoria\ \(1\).jpg);
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 100px;
+    color: white;
+    align-content: center;
+    text-align: center;
+    margin: 13px 0 0 13px;  
+}
+#buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search{
+    width: 500px;
+    height: 35px;
+}
+#horarios{
+    display: flex;
+    justify-content: end;
+}

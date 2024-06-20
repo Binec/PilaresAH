@@ -23,7 +23,18 @@ body{
     background-image: url(../Assets/Banner.jpg);
     color: white;
     justify-content: space-between;
-    height: 280px;  
+    height: 280px; 
+    width: 1460px;
+    margin-left: -230px;
+    padding-left: 230px;
+    padding-right: 230px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+}
+#nombrepilares{
+    width: 400px;
 }
 #logos{
 }

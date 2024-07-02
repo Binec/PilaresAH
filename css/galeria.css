@@ -14,10 +14,10 @@
     grid-column: 1/2;
     grid-row: 1/4;
 }
-img{
+/*img{
     width: 100%;
     height: 100%;
-}
+}*/
 #img1{
     position: relative;
 }
@@ -81,7 +81,7 @@ img{
 #popup{
     backdrop-filter: blur(10px);
     background-color:rgba(54, 52, 52, 0.4);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -103,6 +103,9 @@ img{
     position: absolute;
     right: 100px;
     bottom: 0;
+}
+#fotopop{
+    width: 1000px;
 }
 #foto{
     margin: 0 auto;

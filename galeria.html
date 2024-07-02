@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malla horaria</title>
+    <link rel="stylesheet" href="css/david.css">
     <link rel="stylesheet" href="css/galeria.css">
     <script src="David.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +21,7 @@
                     CDMX
                     </address>
                     <div id="btns-header" style="margin-top: 35px;">
-                        <a href="galeria.html"><button id="galeria" class="btn">Ir a galería</button></a>
+                        <a href="galeria.html"><button id="galeria" class="btn">Regresar</button></a>
                         <a href="#"><button id="eventos" class="btn">Eventos próximos</button></a>
                     </div>
                 </div>
@@ -174,5 +175,24 @@ function myFunction() {
         x.style.display = "none";
     }
 }
+
+// Fucnión de popup
+function popup() {
+        var x = document.getElementById("popup");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function popregresar() {
+        var x = document.getElementById("popup");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
 </script>
 </html

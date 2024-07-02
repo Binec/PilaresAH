@@ -100,6 +100,11 @@ body{
 #taller{
     margin-top: 30px;
 }
+#t-taller{
+    color:#991C46;
+    font-weight: 1000;
+
+}
 #contacto{
     margin-top: 15px;
 }

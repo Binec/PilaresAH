@@ -1,0 +1,134 @@
+#main-container{
+    margin: 0 auto;
+    width: 1295px;
+}
+#grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 650px;
+    max-width: 1295px;
+    gap: 5px;
+}
+.img-v{
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#img1{
+    position: relative;
+}
+.img-v{
+    overflow:hidden;
+}
+.img{
+    position: relative;
+    overflow:hidden;
+}
+#degradado{
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    z-index: 1;
+    position: absolute;
+}
+.img:hover img{
+    -webkit-transform:scale(1.10);
+    -moz-transform:scale(1.10);
+    -ms-transform:scale(1.10);
+    -o-transform:scale(1.10);
+    transform:scale(1.10);
+}
+.img-v:hover img{
+    -webkit-transform:scale(1.10);
+    -moz-transform:scale(1.10);
+    -ms-transform:scale(1.10);
+    -o-transform:scale(1.10);
+    transform:scale(1.10);
+}
+#degradado:hover{
+    cursor: pointer;
+    opacity: 100%;
+    background: rgb(158,29,72);
+    background: linear-gradient(194deg, rgba(56,10,26,1) 0%, rgba(158,29,72,0) 100%);
+    height: 100%;
+    width: 100%;
+}
+.flechader{
+    rotate: 180deg;
+}
+#tittle-page{
+    display: flex;
+    flex-direction: row;
+}
+#back{
+    display: flex;
+    width: 429px;
+}
+#arrow{
+    padding-top: 15px;
+}
+#txtback{
+    margin-left: 2px;
+}
+#titulo{
+    width: 429px;
+    text-align: center;
+}
+#popup{
+    backdrop-filter: blur(10px);
+    background-color:rgba(54, 52, 52, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+#pp-content{
+    padding-top: 50px;
+    width: 1295px;
+    margin: 0 auto;
+}
+#pp-tittle{
+    position: relative;
+    padding-bottom: 25px;
+}
+#exit{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+#foto{
+    margin: 0 auto;
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+#pie-foto{
+    padding-top: 40px;
+}
+
+
+@media only screen and (max-width: 430px){
+    #grid-galeria{
+        width: 96vw;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
+    }
+    .img-v{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}

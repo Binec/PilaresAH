@@ -34,9 +34,12 @@ body{
     height: 40px;
 }
 #nombrepilares{
+    align-items:stretch;
     width: 400px;
+    padding-top: 25px;
 }
 #logos{
+    padding-top: 25px;
 }
 
 #content{

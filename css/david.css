@@ -4,7 +4,9 @@
 }
 body{
     font-family: "Roboto";
-    
+}
+button:hover{
+    cursor: pointer;
 }
 .d-flex-c{
     display: flex;
@@ -41,7 +43,10 @@ body{
 #logos{
     padding-top: 25px;
 }
-
+#redes{
+    display: flex;
+    justify-content: end;
+}
 #content{
     padding-top: 25px;
 }

@@ -1,3 +1,6 @@
+button:hover{
+    cursor: pointer;
+}
 #main-container{
     margin: 0 auto;
     width: 1295px;
@@ -94,6 +97,7 @@
     padding-top: 50px;
     width: 1295px;
     margin: 0 auto;
+    color: white;
 }
 #pp-tittle{
     position: relative;

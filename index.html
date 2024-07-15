@@ -6,8 +6,8 @@
     <title>Malla horaria</title>
     <link rel="stylesheet" href="css/david.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="m-container">
@@ -74,6 +74,100 @@
                     </div>
                 </div>
                 <div id="talleres_container">
+                    <form id="form">
+                        <div>
+                            <h1 id="titformulario">Crea un nuevo taller</h1>
+                        </div>
+                        <div id="formconteiner">
+                            <div id="formizquierdo">
+                                <p id="llena">Llena todos los campos</p>
+                                <div id="forminput1">
+                                    <input type="text" id="inputtn" placeholder="Nombre del taller">
+                                    <input type="text" id="inputtn" placeholder="Nombre completo">
+                                    <input type="text" id="inputdes" placeholder="Descripcion breve">
+                                </div>
+                                <div id="forminput2">
+                                    <table id="tabla"  cellspacing="0" >
+                                        <tr>
+                                            <td><p>Seleciona los días:</p></td>
+                                            <td> <p>Hora de inicio:</p></td>
+                                            <td><p>Hora de final:</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select id="inputdia">
+                                                <option value="1">Lun</option>
+                                                <option value="2">Mar</option>
+                                                <option value="3">Mier</option>
+                                                <option value="4">Jue</option>
+                                                <option value="5">Vie</option>
+                                                </select> 
+                                            </td>
+                                            <td>
+                                                <select id="inputhora">
+                                                    <option value="1">09:00</option>
+                                                    <option value="2">10:00</option>
+                                                    <option value="3">11:00</option>
+                                                    <option value="4">12:00</option>
+                                                    <option value="5">13:00</option>
+                                                    <option value="5">14:00</option>
+                                                    <option value="5">15:00</option>
+                                                    <option value="5">16:00</option>
+                                                    <option value="5">17:00</option>
+                                                    <option value="5">18:00</option>
+                                                    <option value="5">19:00</option>
+                                                    
+                
+                                                    </select> 
+                                            </td>
+                                            <td>
+                                                <select id="inputhora">
+                                                    
+                                                    <option value="2">10:00</option>
+                                                    <option value="3">11:00</option>
+                                                    <option value="4">12:00</option>
+                                                    <option value="5">13:00</option>
+                                                    <option value="5">14:00</option>
+                                                    <option value="5">15:00</option>
+                                                    <option value="5">16:00</option>
+                                                    <option value="5">17:00</option>
+                                                    <option value="5">18:00</option>
+                                                    <option value="5">19:00</option>
+                                                    <option value="1">20:00</option>
+                                                    
+                
+                                                    </select> 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                </div>
+                                <div id="formboton">
+                                    <button id="botoninput1">+ Añadir dia</button>
+                                </div>
+                            </div>
+                            <div id="formderecho">
+                                <div id="forminput3">
+                                    <input type="text" id="inputcorreocel" placeholder="Correo">
+                                    <input type="text"id="inputcorreocel" placeholder="Numero celular">
+                                </div>
+                                <div id="subir">
+                                    <div id="sube">
+                                        <p>Sube un archivo:</p>
+                                    </div>
+                                    <div id="selsarchi">
+                                        <input type="file" id="inputfile">
+                                                            </div>
+                                </div>
+                                <div id="botonderecho">
+                                    <button id="nuevotaller">Crea nuevo taller</button>
+                                </div>
+                            </div>
+                
+                
+                        </div>
+                    </form>
+
                     <div id="PontePila" class="tabcontent">
                         <div id="taller" class="d-flex-r active">
                             <img id="img-taller" src="Assets/yoga.jpeg" alt="">
@@ -442,6 +536,27 @@
                     </div>
 
                     <div id="CEscuela" class="tabcontent">
+                        <div id="taller" class="d-flex-r active">
+                            <img id="img-taller" src="Assets/Rectangle 77.png" alt="">
+                            <div id="t-descripcion">
+                                <h2 id="t-taller">Tardes de poesía</h2>
+                                <h3 id="t-tallerista">Silvia Navarro Torres</h3>
+                                <p id="d-taller">Lectura y goce de la poesía a través de diferentes estilos y autores.</p>
+                                <div id="contacto" class="d-flex-r">
+                                    <div id="mail" class="d-flex-r" style="margin-right: 35px;">
+                                        <img style="margin-right: 10px; width: 18px;" src="Assets/mail.svg" alt="">
+                                        <p>maestrasant20@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="horarios">
+                                <div id="horario" class="d-flex-r">
+                                    <img style="margin-right: 10px; width: 18px;" src="Assets/clock.svg" alt="">
+                                    <p>Jue de 18 a 19:45 hrs</p>
+                                </div>
+                                <button class="btn-ins">Inscríbete</button>
+                            </div>
+                        </div>
                         <div id="taller" class="d-flex-r active">
                             <img id="img-taller" src="Assets/Rectangle 77.png" alt="">
                             <div id="t-descripcion">

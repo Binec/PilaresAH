@@ -164,6 +164,10 @@ button:hover{
     border: 1px solid #ccc;
     border-top: none;
   }
+  #ubicacion{
+    display: flex;
+    flex-direction: row;
+  }
 
 @media only screen and (max-width: 431px) {
    #m-container{
@@ -172,13 +176,14 @@ button:hover{
     height: 100vh;
    }
    #header{
-    height:120px;
-    width: 120%;
+    height:160px;
+    width: 100vw;
     margin-left: -25px;
     padding-left: 25px;
    }
    #logo-p{
     width: 150px;
+    display: none;
    }
    #selec_cat
    {
@@ -257,6 +262,21 @@ button:hover{
     width: 100px;
     padding: 5px;
    }
+   #direccion{
+    display: none;
+   }
+   .btn{
+    height: 32px;
+    width: 100px;
+   }
+   #btns-header{
+    display: flex;
+   }
+   #eventos{
+    margin-left: 15px;
+   }
+   #maps{
+    display: block;
 }
 
 

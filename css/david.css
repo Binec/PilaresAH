@@ -35,6 +35,9 @@ button:hover{
 .btn{
     width: 150px;
     height: 40px;
+    border-radius: 10px;
+        background-color: #4063938a;
+        color:white;
 }
 #nombrepilares{
     align-items:stretch;
@@ -197,6 +200,8 @@ button:hover{
         height: 35px;
         width: 120px;
         border-radius: 10px;
+        background-color: #4063938a;
+        color:white;
    }
    #btns-header{
         display: flex;

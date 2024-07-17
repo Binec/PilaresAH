@@ -168,18 +168,34 @@ button:hover{
     display: flex;
     flex-direction: row;
   }
+  #maps{
+    color: white
+  }
 
 @media only screen and (max-width: 431px) {
    #m-container{
-    width:90vw;
-    padding:0px;
+    width:100vw;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 100vh;
-   }
+    overflow: hidden;
+    }
    #header{
     height:160px;
     width: 100vw;
     margin-left: -25px;
     padding-left: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+   #logos{
+    position: relative;
+   }
+   #redes{
+    position: absolute;
+    left: -90px;
+    bottom: 0;
    }
    #logo-p{
     width: 150px;
@@ -188,7 +204,11 @@ button:hover{
    #selec_cat
    {
     display: flex;
-    flex-direction: row;
+    align-items: end;
+   }
+   #selcat{
+    margin-left: 20px;
+    margin-bottom: 2px;
    }
    #N-Pilares{
     font-size: 12pt;
@@ -204,13 +224,26 @@ button:hover{
    }
    #cat1{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -15px;
    }
    #cat2{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+   #lineas{
+    background-color: #155D4F;
+    width: 2px;
+    height: 20px;
+   }
+   #categorias{
+    margin-bottom: 20px;
    }
    #categoria{
     width: 100px;
-    height: 45px;
+    height: 30px;
     border-radius: 15px;
     background-image: none;
     color: black;
@@ -225,8 +258,13 @@ button:hover{
    #Talleres{
     width: 95vw;
    }
+   #sea{
+    display: flex;
+    align-content: center;
+   }
    #input-buscador{
-    width: 350px;
+    width: 180px;
+    margin-right: 10px;
    }
    #talleres_container{
     width: 370px;
@@ -268,6 +306,7 @@ button:hover{
    .btn{
     height: 32px;
     width: 100px;
+    border-radius: 10px;
    }
    #btns-header{
     display: flex;

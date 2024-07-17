@@ -123,6 +123,7 @@ button:hover{
     align-content: space-between;
     flex-wrap: wrap-reverse;
     width: 330px;
+
 }
 .btn-ins{
     background-color: #155D4F;
@@ -411,4 +412,12 @@ button:hover{
     }
     #sube{
         text-align: left;
+    }
+    #trespuntos{
+        margin-left: 1em;
+    }
+    #trespuntos:hover {
+        width: 50px;
+        height: 50px;
+        transform: rotate(90deg);
     }

@@ -171,15 +171,20 @@ button:hover{
 }
 @media only screen and (max-width: 431px) {
    #m-container{
-    width:90vw;
-    padding:0px;
+    width:100vw;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 100vh;
+    overflow: hidden;
+    
    }
    #header{
-    height:180px;
+    height: 180px;
     width: 100vw;
-    margin-left: -25px;
-    padding-left: 25px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+      
    }
    #direccion{
         display: none;
@@ -189,8 +194,9 @@ button:hover{
     display: none;
    }
    .btn{
-        height: 30px;
-        width: 80px;
+        height: 35px;
+        width: 120px;
+        border-radius: 10px;
    }
    #btns-header{
         display: flex;
@@ -201,6 +207,7 @@ button:hover{
    }
    #maps{
     display: block;
+    font-size: 15pt;
 }
 #logomaps{
     width: 15px;
@@ -208,11 +215,30 @@ button:hover{
     margin-right: 15px;
     
 }
+#redes{
+    position: absolute;
+    left: -50;
+    bottom: 0;
+    z-index: 1;
+    margin-left: -110px;
+}
+#logos{
+    position: relative;
+    
+}
 
    #selec_cat
    {
     display: flex;
     flex-direction: row;
+    align-items: center; 
+
+   }
+   #cattex{
+        margin-right: 30px;
+   }
+   #selcat{
+        margin-top: 5px;
    }
    #N-Pilares{
     font-size: 12pt;
@@ -228,18 +254,31 @@ button:hover{
    }
    #cat1{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
    }
    #cat2{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
    }
    #categoria{
     width: 100px;
-    height: 45px;
+    height: 30px;
     border-radius: 15px;
     background-image: none;
     color: black;
     font-size: 8pt;
     padding: 0 10px 0 10px ;
+   
+   }
+   #categorias{
+        margin-bottom: 20px;
+   }
+   #lineas{
+        width: 2px;
+        height: 20px;
+                background-color: #155D4F;
    }
    #categoria:hover{
     background-color: #991C46;
@@ -249,8 +288,18 @@ button:hover{
    #Talleres{
     width: 95vw;
    }
+   #sea{
+    display: flex;
+    align-content: center;
+   }
+   #Buscador{
+        display: flex;
+        align-content: center;
+   }
    #input-buscador{
-    width: 350px;
+    width: 180px;
+    height: 30px;
+    margin-right: 10px;
    }
    #talleres_container{
     width: 370px;

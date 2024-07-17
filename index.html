@@ -55,28 +55,35 @@
         <section id="content" class="d-flex-r">
             <div id="categorias">
                 <div id="selec_cat">
-                    <h2>Categoría</h2>
-                    <p>Selecciona una categoría</p>
+                    <h2 id="cattex">Categoría</h2>
+                    <p id="selcat">Selecciona una categoría</p>
                 </div>
                 <div id="cat-cont">
                     <div id="cat1">
+                        
                         <div id="categoria" class="catlinks" onclick="openCity(event, 'AEconomica')">
                             <h2>A. Económica</h2>
                         </div>
+                        <div id="lineas"></div>
                         <div id="categoria" class="catlinks" onclick="openCity(event, 'CEscuela')">
                             <h2>Ciber Escuela</h2>
                         </div>
+                        <div id="lineas"></div>
                         <div id="categoria" class="catlinks" onclick="openCity(event, 'Cultura')">
                             <h2>Cultura</h2>
                         </div>
+                        
                     </div>
                     <div id="cat2">
+                        
                         <div id="categoria" class="catlinks" onclick="openCity(event, 'General')">
                             <h2>General</h2>
                         </div>
+                        <div id="lineas"></div>
                         <div id="categoria" class="catlinks" onclick="openCity(event, 'PontePila')">
                             <h2>Ponte Pila</h2>
                         </div>
+                        
                     </div>
                 </div>    
             </div>
@@ -85,7 +92,7 @@
                     <h2>Talleres</h2>
                     <div id="searcher" class="d-flex-r">
                         <div id="Buscador">
-                            <form action="">
+                            <form id="sea" action="">
                                 <input id="input-buscador" type="text" placeholder="Busca tu taller">
                                 <button id="btn-search" type="submit"><img id="img-search" src="Assets/mingcute_search-line.svg" alt=""></button>
                             </form>

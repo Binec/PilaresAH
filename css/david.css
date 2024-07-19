@@ -173,6 +173,19 @@ button:hover{
     color: white
   }
 
+  /*css de eventos*/
+  #eventoscontainer{
+    text-align: center;
+    margin: auto;
+  }
+  #card{
+    overflow: hidden;
+    width: 380px;
+    height: 520px;
+    border: 1px solid #000;
+}
+
+
 @media only screen and (max-width: 431px) {
    #m-container{
     width:100vw;

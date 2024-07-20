@@ -191,12 +191,35 @@ button:hover{
     width: 380px;
     background-color: #FAFAFA;
     margin-right: 40px;
+    position: relative;
 }
 #card-pic{
     width: 380px;
     height: 260px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
+}
+#fecha-horario{
+    width: 380px;
+    position: absolute;
+    bottom: 0;
+}
+#fechaeventos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+}
+#calendarioeventos{
+    display: flex;
+    flex-direction: row;
+}
+#horaeventos{
+    display: flex;
+    flex-direction: row;
+}
+#textfheventos{
+    margin-left: 15px;
 }
 @media only screen and (max-width: 431px) {
    #m-container{

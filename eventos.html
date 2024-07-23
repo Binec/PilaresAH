@@ -50,103 +50,161 @@
             </div>
         </header>
         <section id="content" class="d-flex-c">
-            <h1 id="tituloevento"><strong>Eventos</strong></h1>
+            <h1 id="tituloevento" style="margin-bottom: 15px;"><strong>Eventos</strong></h1>
             <div id="eventoscontainer" class="d-flex-r">
-                <div id="cardevento">
-                    <div id="card">
-                        <div id="card">
-                            <picture><img src="/Assets/Galeria/Eventos/prueba eventos.jpg" alt=""></picture>
-                        </div>
+                <div id="card">
+                    <div id="cardpic">
+                        <picture><img src="/Assets/Eventos/prueba eventos.jpg" alt=""></picture>
                     </div>
                     <div id="textcard">
                         <h2>Nombre del Evento</h2>
-                        <h2>Descripción:</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
+                        <p style="margin-top: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
+                        <div id="moreinfo" class="d-flex-r">
+                            <div id="more" onclick="cambiarTamaño01()" class="d-flex-r">
+                                <p>Leer más</p>
+                                <svg width="20" height="20" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_24_2)">
+                                    <path d="M6.80796 8.99982H17.192L12 17.1538L6.80796 8.99982Z" fill="#991C46"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_24_2" x="-4.00006" y="-0.000183105" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_2"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_2" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div id="fecha-horario">
-                        <div id="fecha">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_2_7)">
-                                <path d="M18.125 21.25H1.875C0.8375 21.25 0 20.3567 0 19.25V3.25C0 2.14333 0.8375 1.25 1.875 1.25H18.125C19.1625 1.25 20 2.14333 20 3.25V19.25C20 20.3567 19.1625 21.25 18.125 21.25ZM1.875 2.58333C1.525 2.58333 1.25 2.87667 1.25 3.25V19.25C1.25 19.6233 1.525 19.9167 1.875 19.9167H18.125C18.475 19.9167 18.75 19.6233 18.75 19.25V3.25C18.75 2.87667 18.475 2.58333 18.125 2.58333H1.875Z" fill="#991C46"/>
-                                <path d="M5.625 5C5.275 5 5 4.725 5 4.375V0.625C5 0.275 5.275 0 5.625 0C5.975 0 6.25 0.275 6.25 0.625V4.375C6.25 4.725 5.975 5 5.625 5ZM14.375 5C14.025 5 13.75 4.725 13.75 4.375V0.625C13.75 0.275 14.025 0 14.375 0C14.725 0 15 0.275 15 0.625V4.375C15 4.725 14.725 5 14.375 5ZM19.375 7.5H0.625C0.275 7.5 0 7.225 0 6.875C0 6.525 0.275 6.25 0.625 6.25H19.375C19.725 6.25 20 6.525 20 6.875C20 7.225 19.725 7.5 19.375 7.5Z" fill="black"/>
+                    <div id="fecha-horario" class="d-flex-r">
+                        <div id="fecha" class="d-flex-r">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5_2)">
+                                <path d="M3.5 0C3.63261 0 3.75979 0.0526784 3.85355 0.146447C3.94732 0.240215 4 0.367392 4 0.5V1H12V0.5C12 0.367392 12.0527 0.240215 12.1464 0.146447C12.2402 0.0526784 12.3674 0 12.5 0C12.6326 0 12.7598 0.0526784 12.8536 0.146447C12.9473 0.240215 13 0.367392 13 0.5V1H14C14.5304 1 15.0391 1.21071 15.4142 1.58579C15.7893 1.96086 16 2.46957 16 3V14C16 14.5304 15.7893 15.0391 15.4142 15.4142C15.0391 15.7893 14.5304 16 14 16H2C1.46957 16 0.960859 15.7893 0.585786 15.4142C0.210714 15.0391 0 14.5304 0 14V5H16V4H0V3C0 2.46957 0.210714 1.96086 0.585786 1.58579C0.960859 1.21071 1.46957 1 2 1H3V0.5C3 0.367392 3.05268 0.240215 3.14645 0.146447C3.24021 0.0526784 3.36739 0 3.5 0Z" fill="#991C46"/>
                                 </g>
                                 <defs>
-                                <clipPath id="clip0_2_7">
-                                <rect width="20" height="20" fill="white"/>
+                                <clipPath id="clip0_5_2">
+                                <rect width="16" height="16" fill="white"/>
                                 </clipPath>
                                 </defs>
                             </svg>
-                            <p>Lunes 25 de Julio</p>
+                            <p style="margin-left: 10px;">Lunes 25 de Julio</p>
                         </div>
-                        <div id="hora">
+                        <div id="hora" class="d-flex-r">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2ZM10 4C10.2449 4.00003 10.4813 4.08996 10.6644 4.25272C10.8474 4.41547 10.9643 4.63975 10.993 4.883L11 5V9.586L13.707 12.293C13.8863 12.473 13.9905 12.7144 13.9982 12.9684C14.006 13.2223 13.9168 13.4697 13.7488 13.6603C13.5807 13.8508 13.3464 13.9703 13.0935 13.9944C12.8406 14.0185 12.588 13.9454 12.387 13.79L12.293 13.707L9.293 10.707C9.13758 10.5514 9.03776 10.349 9.009 10.131L9 10V5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4Z" fill="#991C46"/>
                             </svg>
-                            <p>14:00 hrs</p>
+                            <p style="margin-left: 10px;">14:00 hrs</p>
                         </div>
                     </div>
                 </div>
-                <div id="cardevento">
-                    <div id="card">
-                        <picture><img src="" alt=""></picture>
+                <div id="card">
+                    <div id="cardpic">
+                        <picture><img src="/Assets/Eventos/prueba eventos 2.jpg" alt=""></picture>
                     </div>
                     <div id="textcard">
                         <h2>Nombre del Evento</h2>
-                        <h2>Descripción:</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
+                        <p style="margin-top: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
+                        <div id="moreinfo" class="d-flex-r">
+                            <div id="more" class="d-flex-r">
+                                <p>Leer más</p>
+                                <svg width="20" height="20" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_24_2)">
+                                    <path d="M6.80796 8.99982H17.192L12 17.1538L6.80796 8.99982Z" fill="#991C46"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_24_2" x="-4.00006" y="-0.000183105" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_2"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_2" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div id="fecha-horario">
-                        <div id="fecha">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_2_7)">
-                                <path d="M18.125 21.25H1.875C0.8375 21.25 0 20.3567 0 19.25V3.25C0 2.14333 0.8375 1.25 1.875 1.25H18.125C19.1625 1.25 20 2.14333 20 3.25V19.25C20 20.3567 19.1625 21.25 18.125 21.25ZM1.875 2.58333C1.525 2.58333 1.25 2.87667 1.25 3.25V19.25C1.25 19.6233 1.525 19.9167 1.875 19.9167H18.125C18.475 19.9167 18.75 19.6233 18.75 19.25V3.25C18.75 2.87667 18.475 2.58333 18.125 2.58333H1.875Z" fill="#991C46"/>
-                                <path d="M5.625 5C5.275 5 5 4.725 5 4.375V0.625C5 0.275 5.275 0 5.625 0C5.975 0 6.25 0.275 6.25 0.625V4.375C6.25 4.725 5.975 5 5.625 5ZM14.375 5C14.025 5 13.75 4.725 13.75 4.375V0.625C13.75 0.275 14.025 0 14.375 0C14.725 0 15 0.275 15 0.625V4.375C15 4.725 14.725 5 14.375 5ZM19.375 7.5H0.625C0.275 7.5 0 7.225 0 6.875C0 6.525 0.275 6.25 0.625 6.25H19.375C19.725 6.25 20 6.525 20 6.875C20 7.225 19.725 7.5 19.375 7.5Z" fill="black"/>
+                    <div id="fecha-horario" class="d-flex-r"">
+                        <div id="fecha" class="d-flex-r">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5_2)">
+                                <path d="M3.5 0C3.63261 0 3.75979 0.0526784 3.85355 0.146447C3.94732 0.240215 4 0.367392 4 0.5V1H12V0.5C12 0.367392 12.0527 0.240215 12.1464 0.146447C12.2402 0.0526784 12.3674 0 12.5 0C12.6326 0 12.7598 0.0526784 12.8536 0.146447C12.9473 0.240215 13 0.367392 13 0.5V1H14C14.5304 1 15.0391 1.21071 15.4142 1.58579C15.7893 1.96086 16 2.46957 16 3V14C16 14.5304 15.7893 15.0391 15.4142 15.4142C15.0391 15.7893 14.5304 16 14 16H2C1.46957 16 0.960859 15.7893 0.585786 15.4142C0.210714 15.0391 0 14.5304 0 14V5H16V4H0V3C0 2.46957 0.210714 1.96086 0.585786 1.58579C0.960859 1.21071 1.46957 1 2 1H3V0.5C3 0.367392 3.05268 0.240215 3.14645 0.146447C3.24021 0.0526784 3.36739 0 3.5 0Z" fill="#991C46"/>
                                 </g>
                                 <defs>
-                                <clipPath id="clip0_2_7">
-                                <rect width="20" height="20" fill="white"/>
+                                <clipPath id="clip0_5_2">
+                                <rect width="16" height="16" fill="white"/>
                                 </clipPath>
                                 </defs>
                             </svg>
-                            <p>Lunes 25 de Julio</p>
+                            <p style="margin-left: 10px;">Lunes 25 de Julio</p>
                         </div>
-                        <div id="hora">
+                        <div id="hora" class="d-flex-r">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2ZM10 4C10.2449 4.00003 10.4813 4.08996 10.6644 4.25272C10.8474 4.41547 10.9643 4.63975 10.993 4.883L11 5V9.586L13.707 12.293C13.8863 12.473 13.9905 12.7144 13.9982 12.9684C14.006 13.2223 13.9168 13.4697 13.7488 13.6603C13.5807 13.8508 13.3464 13.9703 13.0935 13.9944C12.8406 14.0185 12.588 13.9454 12.387 13.79L12.293 13.707L9.293 10.707C9.13758 10.5514 9.03776 10.349 9.009 10.131L9 10V5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4Z" fill="#991C46"/>
                             </svg>
-                            <p>14:00 hrs</p>
+                            <p style="margin-left: 10px;">14:00 hrs</p>
                         </div>
                     </div>
                 </div>
-                <div id="cardevento">
-                    <div id="card">
-                        <picture><img src="" alt=""></picture>
+                <div id="card">
+                    <div id="cardpic">
+                        <picture><img src="/Assets/Eventos/taller carpinteria cuadrada 2.jpg" alt=""></picture>
                     </div>
                     <div id="textcard">
                         <h2>Nombre del Evento</h2>
-                        <h2>Descripción:</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
+                        <p style="margin-top: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
+                        <div id="moreinfo" class="d-flex-r">
+                            <div id="more" class="d-flex-r">
+                                <p>Leer más</p>
+                                <svg width="20" height="20" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_24_2)">
+                                    <path d="M6.80796 8.99982H17.192L12 17.1538L6.80796 8.99982Z" fill="#991C46"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_24_2" x="-4.00006" y="-0.000183105" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_2"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_2" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div id="fecha-horario">
-                        <div id="fecha">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_2_7)">
-                                <path d="M18.125 21.25H1.875C0.8375 21.25 0 20.3567 0 19.25V3.25C0 2.14333 0.8375 1.25 1.875 1.25H18.125C19.1625 1.25 20 2.14333 20 3.25V19.25C20 20.3567 19.1625 21.25 18.125 21.25ZM1.875 2.58333C1.525 2.58333 1.25 2.87667 1.25 3.25V19.25C1.25 19.6233 1.525 19.9167 1.875 19.9167H18.125C18.475 19.9167 18.75 19.6233 18.75 19.25V3.25C18.75 2.87667 18.475 2.58333 18.125 2.58333H1.875Z" fill="#991C46"/>
-                                <path d="M5.625 5C5.275 5 5 4.725 5 4.375V0.625C5 0.275 5.275 0 5.625 0C5.975 0 6.25 0.275 6.25 0.625V4.375C6.25 4.725 5.975 5 5.625 5ZM14.375 5C14.025 5 13.75 4.725 13.75 4.375V0.625C13.75 0.275 14.025 0 14.375 0C14.725 0 15 0.275 15 0.625V4.375C15 4.725 14.725 5 14.375 5ZM19.375 7.5H0.625C0.275 7.5 0 7.225 0 6.875C0 6.525 0.275 6.25 0.625 6.25H19.375C19.725 6.25 20 6.525 20 6.875C20 7.225 19.725 7.5 19.375 7.5Z" fill="black"/>
+                    <div id="fecha-horario" class="d-flex-r"">
+                        <div id="fecha" class="d-flex-r">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5_2)">
+                                <path d="M3.5 0C3.63261 0 3.75979 0.0526784 3.85355 0.146447C3.94732 0.240215 4 0.367392 4 0.5V1H12V0.5C12 0.367392 12.0527 0.240215 12.1464 0.146447C12.2402 0.0526784 12.3674 0 12.5 0C12.6326 0 12.7598 0.0526784 12.8536 0.146447C12.9473 0.240215 13 0.367392 13 0.5V1H14C14.5304 1 15.0391 1.21071 15.4142 1.58579C15.7893 1.96086 16 2.46957 16 3V14C16 14.5304 15.7893 15.0391 15.4142 15.4142C15.0391 15.7893 14.5304 16 14 16H2C1.46957 16 0.960859 15.7893 0.585786 15.4142C0.210714 15.0391 0 14.5304 0 14V5H16V4H0V3C0 2.46957 0.210714 1.96086 0.585786 1.58579C0.960859 1.21071 1.46957 1 2 1H3V0.5C3 0.367392 3.05268 0.240215 3.14645 0.146447C3.24021 0.0526784 3.36739 0 3.5 0Z" fill="#991C46"/>
                                 </g>
                                 <defs>
-                                <clipPath id="clip0_2_7">
-                                <rect width="20" height="20" fill="white"/>
+                                <clipPath id="clip0_5_2">
+                                <rect width="16" height="16" fill="white"/>
                                 </clipPath>
                                 </defs>
                             </svg>
-                            <p>Lunes 25 de Julio</p>
+                            <p style="margin-left: 10px;">Lunes 25 de Julio</p>
                         </div>
-                        <div id="hora">
+                        <div id="hora" class="d-flex-r">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2ZM10 4C10.2449 4.00003 10.4813 4.08996 10.6644 4.25272C10.8474 4.41547 10.9643 4.63975 10.993 4.883L11 5V9.586L13.707 12.293C13.8863 12.473 13.9905 12.7144 13.9982 12.9684C14.006 13.2223 13.9168 13.4697 13.7488 13.6603C13.5807 13.8508 13.3464 13.9703 13.0935 13.9944C12.8406 14.0185 12.588 13.9454 12.387 13.79L12.293 13.707L9.293 10.707C9.13758 10.5514 9.03776 10.349 9.009 10.131L9 10V5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4Z" fill="#991C46"/>
                             </svg>
-                            <p>14:00 hrs</p>
+                            <p style="margin-left: 10px;">14:00 hrs</p>
                         </div>
                     </div>
                 </div>
@@ -183,5 +241,17 @@ function myFunction() {
         x.style.display = "none";
     }
 }
+// Función More Info Cards
+function cambiarTamaño01(){
+        var div = document.getElementById("textcard");
+        if (div.style.height === "180px"){
+            div.style.height = "520px";
+            div.style.margin === auto;
+            
+        }
+        else {
+            div.style.height = "180px";
+        }
+    }
 </script>
 </html

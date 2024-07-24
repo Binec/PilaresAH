@@ -60,7 +60,7 @@
                         <h2>Nombre del Evento</h2>
                         <p style="margin-top: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
                         <div id="moreinfo" class="d-flex-r">
-                            <div id="more" onclick="cambiarTamaño01()" class="d-flex-r">
+                            <div id="more" onclick="doble()" class="d-flex-r">
                                 <p>Leer más</p>
                                 <svg width="20" height="20" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_d_24_2)">
@@ -112,7 +112,7 @@
                         <h2>Nombre del Evento</h2>
                         <p style="margin-top: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
                         <div id="moreinfo" class="d-flex-r">
-                            <div id="more" class="d-flex-r">
+                            <div id="more" onclick="doble()" class="d-flex-r">
                                 <p>Leer más</p>
                                 <svg width="20" height="20" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_d_24_2)">
@@ -164,7 +164,7 @@
                         <h2>Nombre del Evento</h2>
                         <p style="margin-top: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
                         <div id="moreinfo" class="d-flex-r">
-                            <div id="more" class="d-flex-r">
+                            <div id="more" onclick="doble()" class="d-flex-r">
                                 <p>Leer más</p>
                                 <svg width="20" height="20" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_d_24_2)">
@@ -242,15 +242,26 @@ function myFunction() {
     }
 }
 // Función More Info Cards
+function doble(){
+    cambiarTamaño01();
+    toggleDiv01();
+}
 function cambiarTamaño01(){
         var div = document.getElementById("textcard");
         if (div.style.height === "180px"){
-            div.style.height = "520px";
-            div.style.margin === auto;
             
         }
         else {
             div.style.height = "180px";
+        }
+    }
+    function toggleDiv01(){
+        var div = document.getElementById("cardpic");
+        if (div.style.display === "none"){
+            div.style.display = "block";
+        }
+        else {
+            div.style.display = "none";
         }
     }
 </script>

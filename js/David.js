@@ -1,17 +1,17 @@
-/*const btns = document.querySelectorAll('.btn');
-
-    if(btns){
-        btns.forEach(item => {
-        item.addEventListener('click', function(event){
-        let id = event.target.getAttribute('data-id');
-        if(id){
-        document.querySelector('.active').classList.remove('active');
-        document.getElementById(id).classList.add('active');
-        }
-        })
-    })
+//cambiar cards 
+function moreinfo(){
+    var div = document.getElementById("cardinfo");
+    if (div.style.height === "520px"){
+        div.style.height = "108px";
+        div.style.backgroundColor = "blue";
+        div.style.color = "#011E41";
     }
-    */
+    else {
+        div.style.height = "520px";
+        div.style.backgroundColor = "#011E41";
+        div.style.color = "white";       
+    }           
+    }
     function popup() {
         var x = document.getElementById("popup");
         if (x.style.display === "none") {

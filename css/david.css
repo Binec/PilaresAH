@@ -208,9 +208,9 @@ button:hover{
     padding: 0px 20px 0px 20px;
 }
 #fecha-horario{
-    width: 380px;
-    position: absolute;
+    width: 100%;
     bottom: 0;
+    
 }
 #textevento{
    
@@ -221,10 +221,14 @@ button:hover{
     text-align: justify;
 }
 #fechaeventos{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     margin-bottom: 10px;
+    
     
 }
 #calendarioeventos{
@@ -254,7 +258,11 @@ button:hover{
     margin-top: 10px;
 
 }
-
+#cardfuntion{
+    height: 520px;
+    background-color: #FAFAFA;
+    
+}
 @media only screen and (max-width: 431px) {
    #m-container{
     width:100vw;

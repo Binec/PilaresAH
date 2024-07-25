@@ -189,6 +189,7 @@ button:hover{
     overflow: hidden;
     background-color: #FAFAFA;
     margin-right: 25px;
+    position: relative;
   }
   #cardpic{
     overflow: hidden;
@@ -205,8 +206,12 @@ button:hover{
     text-align: end;
   }
   #fecha-horario{
-    justify-content: space-between;
     padding: 15px 20px 15px 20px;
+    position: absolute;
+    bottom: 10px;
+  }
+  #fecha{
+    margin-right: 65px;
   }
   
   

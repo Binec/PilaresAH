@@ -58,7 +58,7 @@
                     </div>
                     <div id="textcard">
                         <h2>Nombre del Evento</h2>
-                        <p style="margin-top: 15px; height: 100px; overflow: hidden;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?</p>
+                        <p id="textocard" style="margin-top: 15px; height: 100px; overflow: hidden;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga earum, deleniti quos ipsum, dolores aliquid fugiat consequatur, ducimus quaerat pariatur nostrum. Autem eum sint sunt qui voluptas velit sed odit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem laborum, dolorum illo deserunt ut eligendi iusto id voluptates doloribus magni nam ipsa, nostrum, minus libero quod incidunt accusamus delectus quam.</p>
                         <div id="moreinfo" class="d-flex-r">
                             <div id="more" onclick="doble()" class="d-flex-r">
                                 <p>Leer más</p>
@@ -249,11 +249,15 @@ function doble(){
 }
 function cambiarTamaño01(){
         var div = document.getElementById("textcard");
+        var div2 = document.getElementById("textocard")
         if (div.style.height === "180px"){
+            div2.style.height = "100px";
+
             
         }
         else {
             div.style.height = "180px";
+            div2.style.height = "380px";
         }
     }
     function toggleDiv01(){

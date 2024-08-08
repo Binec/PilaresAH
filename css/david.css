@@ -71,7 +71,7 @@ button:hover{
     color:#991C46;
 }
 #Talleres{
-    man-width: 800px;
+    max-width: 800px;
     min-width: 300px
 }
 #t-searcher{
@@ -197,14 +197,14 @@ button:hover{
     flex-direction: column;
     border-radius: 15px;
 }
-#card-pic{
+.card-pic{
     width: 380px;
     height: 260px;
     overflow: hidden;
     border-radius: 15px 15px 0px 0px;
 
 }
-#cardinfo{
+.cardinfo{
     padding: 0px 20px 0px 20px;
 }
 #fecha-horario{
@@ -212,7 +212,7 @@ button:hover{
     bottom: 0;
     
 }
-#textevento{
+.textevento{
    
     height: 70px;
     overflow: hidden;
@@ -242,7 +242,7 @@ button:hover{
 #textfheventos{
     margin-left: 15px;
 }
-#titulotevento{
+titulotevento{
     padding: 10px;
 }
 #piceventos{
@@ -258,7 +258,7 @@ button:hover{
     margin-top: 10px;
 
 }
-#cardfuntion{
+.cardfuntion{
     height: 520px;
     background-color: #FAFAFA;
     

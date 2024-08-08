@@ -41,7 +41,7 @@
                     </address>
                     <div id="btns-header" style="margin-top: 35px;">
                         <a href="galeria.html"><button id="galeria" class="btn">Ir a galería</button></a>
-                        <a href="#"><button id="eventos" class="btn" >Eventos próximos</button></a>
+                        <a href="#"><button id="eventos" class="btn" onclick="master()">Eventos próximos</button></a>
                     </div>
                 </div>
                 <div id="logos">
@@ -59,18 +59,18 @@
         <div id="eventosconteiner">
                 
                 <div id="cardeventos">
-                    <div id="cardfuntion" style="height: 520px;">
-                            <div id="card-pic" style="display: block;">
+                    <div class="cardfuntion" id="card1" style="height: 520px;">
+                            <div class="card-pic" id="card-pic1" style="display: block;">
                                 <picture>
                                     <image id="piceventos" src="./Assets/telardecintura.jpg"></image>
                                 </picture>
                             </div>
                             
-                                <div id="cardinfo">
+                                <div class="cardinfo" id="cardinfo1">
                                     <h2 id="titulotevento">Titulo Evento</h2>
-                                    <p id="textevento" style="height: 70px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "</p>
+                                    <p class="textevento" id="textevento1" style="height: 70px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "</p>
                                     <div id="fecha-horario">
-                                                <div id="masinfo"  onclick="doble()">
+                                                <div id="masinfo"  onclick="master1()">
                                                     <p  >Leer +</p>
                                                 </div>    
                                                 <div id="fechaeventos">
@@ -106,19 +106,20 @@
                 
                 
                 <div id="cardeventos">
-                    <div id="card-pic">
+                    <div id="card2" class="cardfuntion" style="height: 520px;">
+                    <div class="card-pic" id="card-pic2">
                         <picture>
                             <image id="piceventos" src="/Assets/tatuaje.jpeg"></image>
                         </picture>
                     </div>
-                    <div id="cardinfo">
+                    <div class="cardinfo" id="cardinfo2">
                         <h2 id="titulotevento">Titulo Evento</h2>
-                        <p id="textevento">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
+                        <p class="textevento" id="textevento2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "</p>
                         <div id="fecha-horario">
                             <div>
-                                <p id="masinfo" src=>Leer +</p>
+                                <p id="masinfo" onclick="master()">Leer +</p>
                             </div> 
-                            <div id="fechaeventos">
+                            <div id="fechaeventos" >
                                 <div id="calendarioeventos">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_388_1573)">
@@ -140,6 +141,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
                 
@@ -232,12 +234,12 @@ function color(){
         }    
 }
         */
-function doble(){
+function master1(){
     toggleDiv00();
     color();
 }
 function toggleDiv00(){
-        var div = document.getElementById("card-pic");
+        var div = document.getElementById("card-pic1");
         if (div.style.display === "block"){
             div.style.display = "none";
             
@@ -248,9 +250,9 @@ function toggleDiv00(){
         }
     }
 function color(){
-        var div = document.getElementById("cardfuntion");
-        var div2 = document.getElementById("cardinfo");
-        var text = document.getElementById("textevento");
+        var div = document.getElementById("card1");
+        var div2 = document.getElementById("cardinfo1");
+        var text = document.getElementById("textevento1");
        
         if (div.style.height ==="520px"){
             div.style.height = "500px";
@@ -271,6 +273,31 @@ function color(){
             text.style.height = "70px";
            
                  
+        }
+    }
+    function master(){
+        var div = document.getElementById("card2");
+        var div2 = document.getElementById("cardinfo2");
+        var text = document.getElementById("textevento2");
+        var divc = document.getElementById("card-pic2");
+
+        if(div.style.height === "520px"){
+            div.style.height = "500px";
+            div.style.width = "380px";
+            div.style.borderRadius = "15px";
+            
+           
+            div2.style.display = "flex";
+            div2.style.flexDirection = "column";
+            div2.style.justifyContent = "space-around";
+            
+            text.style.height = "350px";
+            divc.style.display = "none";
+        }
+        else{
+            div.style.height = "520px";
+            text.style.height = "70px";
+            divc.style.display = "block";
         }
     }
     

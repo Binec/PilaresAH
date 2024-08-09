@@ -165,6 +165,47 @@ button:hover{
     border-top: none;
   }
 
+  /*css de eventos*/
+  #tituloevento{
+    text-align: center;
+  }
+  #eventoscontainer{
+    margin: auto;
+    display: flex;
+  }
+  #card{
+    width: 360px;
+    height: 520px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #FAFAFA;
+    margin-right: 25px;
+    position: relative;
+  }
+  .cardpic{
+    overflow: hidden;
+    height: 260px;
+    width: 100%;
+  }
+  .textcard{
+    height: 180px;
+    padding: 15px 20px 15px 20px;
+    text-align: justify;
+  }
+  #moreinfo{
+    justify-content: end;
+    text-align: end;
+  }
+  #fecha-horario{
+    padding: 15px 20px 15px 20px;
+    position: absolute;
+    bottom: 10px;
+  }
+  #fecha{
+    margin-right: 65px;
+  }
+  
 @media only screen and (max-width: 431px) {
    #m-container{
     width:90vw;

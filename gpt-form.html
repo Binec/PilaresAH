@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("contactForm").onsubmit = async function(event) {
+            event.preventDefault(); // Prevents the default form submission
+            
+            const formData = new FormData(this);
+            const response = await fetch("https://script.google.com/macros/s/AKfycbzS4V5eg6III_BS8okqqYcEey8rrJT5rYrWfS_OCxgW4gsluXO46Fn0aXaiZrBvyCmi/exec", { // Replace with your Google Apps Script URL
+                method: "POST",
+                body: formData
+            });
+            
+            if (response.ok) {
+                alert("Submission successful!");
+                this.reset(); // Reset the form
+            } else {
+                alert("Submission failed.");
+            }
+        };
+    </script>
+</body>
+</html>

@@ -8,7 +8,21 @@
  </head>
  <script>
     <script>
-   const form = document.querySelector("#form")
+   
+</script>
+ </script>
+ <body>
+ <form id="contact-form">
+ <h2>Formulario de contacto</h2>
+ <p>
+ <label>Nombre<br><input type="text"  name="nombre"></label><br>
+ <label>Email<br><input type="email" name="email"></label><br>
+ <label>Comentarios<br></label><textarea name="comentarios" cols=40 rows=5></textarea></label>
+ </p>
+ <input id="submit-contact-form" type="submit" value="Submit">
+ </form>
+ <script>
+const form = document.querySelector("#form")
    const submitButton = document.querySelector("#submit")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbwG9vCMBREFM4suhSiTdVPFu7-F-6JclKyZGGuKjFS-dqaZT6kKXS6r_15kub3YH2R5yw/exec'
 
@@ -28,19 +42,8 @@
        }
        )
    })
-</script>
- </script>
- <body>
- <form id="contact-form">
- <h2>Formulario de contacto</h2>
- <p>
- <label>Nombre<br><input type="text"  name="nombre"></label><br>
- <label>Email<br><input type="email" name="email"></label><br>
- <label>Comentarios<br></label><textarea name="comentarios" cols=40 rows=5></textarea></label>
- </p>
- <input id="submit-contact-form" type="submit" value="Submit">
- </form>
- <script>
+
+
  (function() {
  var $form = $('form#contact-form'), url = 'https://script.google.com/macros/s/AKfycbwvbTDNkm80FppBdqeF9M9lk7m7em0fAVZ7y4JG_Bw59S306DYr8gvem8p2cLIPKD43VQ/exec';
  $('#submit-contact-form').on('click', function(e) {

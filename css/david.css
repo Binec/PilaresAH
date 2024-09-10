@@ -213,10 +213,20 @@ button:hover{
     height: 100vh;
    }
    #header{
-    height:120px;
-    width: 120%;
+    height:150px;
+    width: 40%;
     margin-left: -25px;
     padding-left: 25px;
+    justify-content: space-between;
+   }
+   #nombrepilares h1{
+    font-size: 16pt;
+   }
+   #nombrepilares address{
+    display: none;
+   }
+   #logos{
+    margin-left: 70px;
    }
    #logo-p{
     width: 150px;
@@ -299,24 +309,6 @@ button:hover{
     padding: 5px;
    }
 }
-
-
-
-
-/*.btn{
-    display:inline-block;
-    background:#ccc;
-    line-height:36px;
-    padding: 0 10px;
-    cursor:pointer;
-  }
-  #taller{
-    display:none
-  }
-  #taller.active{
-    display:block
-  }*/
-
   #form{
     width: 820px;
     height: 560px;
@@ -342,8 +334,6 @@ button:hover{
 #forminput1{
     display: flex;
     flex-direction: column;
-   
-
     }
     #inputtn{
         margin-top: 10px;
@@ -359,14 +349,12 @@ button:hover{
         padding: 10px;
         padding-left: 10px;
     }
-
     #forminput2{
         margin-top: 10px;
         width: 355px;
         display: flex;
         flex-direction: column;
         border-radius: 5px;
-        
     }
     #tabla{
         text-align: left;
@@ -382,7 +370,6 @@ button:hover{
         flex-direction: row;
         padding: 10px;
     }
-
     #inputdia{
         
         margin-right: 50px;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="formulariobd.css">
+</head>
+<body>
+    <h1>Regístrate</h1>
+    <h5>Llena todos los datos para inscribirte: </h5>
+    <form id="contactForm" method="post">
+        
+        <input type="text" id="name" class="registro" name="name" placeholder="Escribe completo: " required><br><br>
+
+        <input type="text" id="folio" class="registro" name="folio" placeholder="Folio PILARES: " required><br>
+
+        <h5>¿No tienes folio?</h5>
+
+        <input type="number" id="phone"class="registro" name="phone" placeholder="Número de celular: " required><br><br>
+
+        <input type="email" id="email" class="registro" name="email" placeholder="Correo electrónico: "><br><br>
+
+        <input type="edad" id="edad" class="registro" name="edad" placeholder="Edad: " required><br><br>
+
+        <input type="text" id="taller" class="registro" name="taller" placeholder="Selecciona taller: "><br><br>
+
+        <input type="text" id="comments" name="comments" placeholder="Comentarios: " required><br><br>
+
+        <input type="submit" id="bottomreg" class="registro" value="Solicitar inscripción">
+    </form>
+</body>
+<script>
+     document.getElementById("contactForm").onsubmit = async function(event) {
+            event.preventDefault(); // Prevents the default form submission
+            
+            const formData = new FormData(this);
+            const response = await fetch("https://script.google.com/macros/s/AKfycbzZeAaGIwBDfE5dGncXeyKvKkVr1FschaCNi8jkROmuGQRVIX0Ctyy7qjgCNVjxiPat/exec", { // Replace with your Google Apps Script URL
+                method: "POST",
+                body: formData
+            });
+            
+            if (response.ok) {
+                alert("Submission successful!");
+                this.reset(); // Reset the form
+            } else {
+                alert("Submission failed.");
+            }
+        };
+</script>
+</html>

@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serifgit;
+}
+
+#contactForm {
+    
+}
+.registro {
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding-left: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#comments {
+    width: 280px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding-left: 5px;
+}
+
+#bottomreg {
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+@media screen and (min-width: 450px)

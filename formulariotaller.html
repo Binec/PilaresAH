@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/formulariotaller.css">
     <title>Document</title>
-    <script src="/js/script.js">
-        document.getElementById("formtaller").onsubmit = async function(event) {
-            event.preventDefault();
-            const formData = new formData(this);
-            const response = await fetch("https://script.google.com/macros/s/AKfycbwV_wBzmSk8OA5cDh10bkeuL-HUsA4JL18JoVaL2IzT-0xtQT1sHko47R6m_FkZ5ehq/exec", {
-                method:"POST",
-                body:formData
+    <script>
+        document.getElementById("formconteiner").onsubmit = async function(event) {
+            event.preventDefault(); // Prevents the default form submission
+            
+            const formData = new FormData(this);
+            const response = await fetch("https://script.google.com/macros/s/AKfycbwC7EBUJnniEhV9c6veAwVhXrQRRHeA5ut8B6pIsDu2GAnSidARz6S3dSpoeIaLyTUU/exec", { // Replace with your Google Apps Script URL
+                method: "POST",
+                body: formData
             });
+            
             if (response.ok) {
-                alert("Creacion de taller exitoso");
-                this.reset();                
-            } else{
-                alert("vuelve a intentarlo");
+                alert("Submission successful!");
+                this.reset(); // Reset the form
+            } else {
+                alert("Submission failed.");
             }
         };
     </script>
@@ -30,15 +32,15 @@
         </div>
         <div id="formconteiner">
             <p id="llena">Llena todos los campos</p>
-            <input type="text" id="taller" class="inputtn" placeholder="Nombre del taller">
-            <input type="text" id="tallerista" class="inputtn" placeholder="Nombre del tallerista">
-            <input type="text" id="usuario" class="inputtn" placeholder="Nombre completo">
-            <input type="text" id="descripcion" class="inputdes" placeholder="Descripcion breve">
-            <input type="text" id="celular" class="inputcorreocel" placeholder="Correo Electrónico">
-            <input type="text" id="correo" class="inputcorreocel" placeholder="Numero celular">
+            <input type="text" id="taller" class="inputtn" name="taller" placeholder="Nombre del taller">
+            <input type="text" id="tallerista" class="inputtn" name="tallerista" placeholder="Nombre del tallerista">
+            <input type="text" id="usuario" class="inputtn" name="usuario" placeholder="Nombre completo">
+            <input type="text" id="descripcion" class="inputdes" name="descripcion" placeholder="Descripcion breve">
+            <input type="text" id="celular" class="inputcorreocel" name="celular" placeholder="Correo Electrónico">
+            <input type="text" id="correo" class="inputcorreocel" name="correo" placeholder="Numero celular">
             <div class="container">
                 <h1>Seleccione los días y horarios</h1>
-                <form id="scheduleForm">
+                <form id="scheduleForm"> 
                     <div class="day-time">
                     <label for="day">Día de la semana:</label>
                     <select id="dia" name="day[]" class="day">
@@ -52,16 +54,16 @@
                     </select>
                     <label for="startTime">Hora de inicio:</label>
                     <select id="horainicio" name="startTime[]" class="startTime">
-                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript -->
+                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript
                     </select>
                     <label for="endTime">Hora de fin:</label>
                     <select id="horafin" name="endTime[]" class="endTime">
-                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript -->
+                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript
                     </select>
                     </div>
-                    <button type="button" id="addSchedule">Añadir otro día</button>
+                    <button type="button" id="addSchedule">Añadir otro día</button>-->
                     <button type="submit">Enviar</button>
-                </form>
+            
             </div>
         </div>    
     </form>

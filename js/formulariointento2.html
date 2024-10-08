@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="contactForm" method="post">
+        <div id="pruebaForm">
+            <input type="text" id="nombre" name="nombre">
+            <input type="text" id="taller" name="taller">
+            <input type="text" id="descripcion" name="descripcion">
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+<script>
+    document.getElementById("contactForm").onsubmit = async function(event) {
+            event.preventDefault(); // Prevents the default form submission
+            
+            const formData = new FormData(this);
+            const response = await fetch("https://script.google.com/macros/s/AKfycbw2lidv-14757Rx2utNmuYgwDVm-Lz1raqAE0qMIdgtmm3Ljyp8U3Hy1FLfsR33yIEJ/exec", { // Replace with your Google Apps Script URL
+                method: "POST",
+                body: formData
+            });
+            
+            if (response.ok) {
+                alert("Submission successful!");
+                this.reset(); // Reset the form
+            } else {
+                alert("Submission failed.");
+            }
+        };
+</script>
+</html>

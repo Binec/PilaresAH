@@ -5,70 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/formulariotaller.css">
     <title>Document</title>
-    <script>
-        document.getElementById("formconteiner").onsubmit = async function(event) {
-            event.preventDefault(); // Prevents the default form submission
-            
-            const formData = new FormData(this);
-            const response = await fetch("https://script.google.com/macros/s/AKfycbwC7EBUJnniEhV9c6veAwVhXrQRRHeA5ut8B6pIsDu2GAnSidARz6S3dSpoeIaLyTUU/exec", { // Replace with your Google Apps Script URL
-                method: "POST",
-                body: formData
-            });
-            
-            if (response.ok) {
-                alert("Submission successful!");
-                this.reset(); // Reset the form
-            } else {
-                alert("Submission failed.");
-            }
-        };
-    </script>
 </head>
 <body>
 <div id="talleres_container">
-    <form id="formtaller" style="display: block;">
+    <form id="formtaller" method="post" style="display: block;">
         <div>
             <h1 id="titformulario">Crea un nuevo taller</h1>
         </div>
         <div id="formconteiner">
             <p id="llena">Llena todos los campos</p>
-            <input type="text" id="taller" class="inputtn" name="taller" placeholder="Nombre del taller">
-            <input type="text" id="tallerista" class="inputtn" name="tallerista" placeholder="Nombre del tallerista">
-            <input type="text" id="usuario" class="inputtn" name="usuario" placeholder="Nombre completo">
-            <input type="text" id="descripcion" class="inputdes" name="descripcion" placeholder="Descripcion breve">
-            <input type="text" id="celular" class="inputcorreocel" name="celular" placeholder="Correo Electrónico">
-            <input type="text" id="correo" class="inputcorreocel" name="correo" placeholder="Numero celular">
+            <input type="text" id="taller" class="inputtn" name="taller" placeholder="Nombre del taller" required>
+            <input type="text" id="tallerista" class="inputtn" name="tallerista" placeholder="Nombre del tallerista" required>
+            <input type="text" id="usuario" class="inputtn" name="usuario" placeholder="Nombre completo" required>
+            <input type="text" id="descripcion" class="inputdes" name="descripcion" placeholder="Descripcion breve" required>
+            <input type="text" id="correo" class="inputcorreocel" name="correo" placeholder="Correo Electrónico" required>
+            <input type="text" id="celular" class="inputcorreocel" name="celular" placeholder="Numero celular" required>
             <div class="container">
                 <h1>Seleccione los días y horarios</h1>
                 <form id="scheduleForm"> 
                     <div class="day-time">
-                    <label for="day">Día de la semana:</label>
-                    <select id="dia" name="day[]" class="day">
-                        <option value="lunes">Lunes</option>
-                        <option value="martes">Martes</option>
-                        <option value="miércoles">Miércoles</option>
-                        <option value="jueves">Jueves</option>
-                        <option value="viernes">Viernes</option>
-                        <option value="sábado">Sábado</option>
-                        <option value="domingo">Domingo</option>
-                    </select>
-                    <label for="startTime">Hora de inicio:</label>
-                    <select id="horainicio" name="startTime[]" class="startTime">
-                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript
-                    </select>
-                    <label for="endTime">Hora de fin:</label>
-                    <select id="horafin" name="endTime[]" class="endTime">
-                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript
-                    </select>
+                        <label for="day">Día de la semana:</label>
+                        <select id="dia" name="day[]" class="day">
+                            <option value="lunes">Lunes</option>
+                            <option value="martes">Martes</option>
+                            <option value="miércoles">Miércoles</option>
+                            <option value="jueves">Jueves</option>
+                            <option value="viernes">Viernes</option>
+                            <option value="sábado">Sábado</option>
+                            <option value="domingo">Domingo</option>
+                        </select>
+                        <label for="startTime">Hora de inicio:</label>
+                        <select id="horainicio" name="startTime[]" class="startTime">
+                            //Las opciones de tiempo se agregarán dinámicamente con JavaScript
+                        </select>
+                        <label for="endTime">Hora de fin:</label>
+                        <select id="horafin" name="endTime[]" class="endTime">
+                            //Las opciones de tiempo se agregarán dinámicamente con JavaScript
+                        </select>
                     </div>
-                    <button type="button" id="addSchedule">Añadir otro día</button>-->
+                    <button type="button" id="addSchedule">Añadir otro día</button>
                     <button type="submit">Enviar</button>
-            
+                </form>
             </div>
         </div>    
     </form>
 </div>
 <script>
+    document.getElementById("formtaller").onsubmit = async function(event) {
+        event.preventDefault(); // Prevents the default form submission
+        
+        const formData = new FormData(this);
+        const response = await fetch("https://script.google.com/macros/s/AKfycbxEC8kqYmDdwONh7n0KRSOV4FrOFm0fRvGqHh3W2QnwBjoNXmMVgvAjS5v-9dTfcRM/exec", { // Replace with your Google Apps Script URL
+            method: "POST",
+            body: formData
+        });
+        
+        if (response.ok) {
+            alert("Etcelente");
+            this.reset(); // Reset the form
+        } else {
+            alert("seas mamon");
+        }
+    };
+</script>
+
+
     // Función para añadir un nuevo día y horario
 document.getElementById("addSchedule").addEventListener("click", function () {
   const newDayTime = document.createElement("div");
@@ -124,6 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
   generateTimeOptions(startTimeSelect);
   generateTimeOptions(endTimeSelect);
 });
+*/
 </script>
 
 </body>

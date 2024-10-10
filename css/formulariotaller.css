@@ -144,44 +144,45 @@
     background-color: #f4f4f4;
     padding: 20px;
   }
-.container {
+  
+  .container {
     max-width: 600px;
     margin: 0 auto;
     background: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    h1 {
+  }
+  
+  h1 {
     margin-bottom: 20px;
     font-size: 24px;
-    }
-    
-    form {
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    }
-    
-    .day-time {
+  }
+  
+  .day-time {
     margin-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 15px;
-    }
-    
-    label {
+  }
+  
+  label {
     font-size: 14px;
     margin-right: 5px;
-    }
-    
-    select, input {
+  }
+  
+  select, input {
     padding: 5px;
     font-size: 14px;
-    }
-    
-    button {
+  }
+  
+  button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -190,8 +191,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    }
-    
-    button:hover {
+  }
+  
+  button:hover {
     background-color: #0056b3;
-}
+  }

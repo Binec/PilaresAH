@@ -41,7 +41,7 @@
                 <div id="cat-cont">
                     <div id="cat1">
                         <div id="categoria" class="catlinks" onclick="openCity(event, 'AEconomica')">
-                            <h2>A. Económica</h2>
+                            <h2 class="header-cat" >A. Económica</h2>
                         </div>
                         <div id="categoria" class="catlinks" onclick="openCity(event, 'CEscuela')">
                             <h2>Ciber Escuela</h2>
@@ -909,7 +909,7 @@
     </div>   
 </body>
 <script>
-    function openCity(evt, cityName) {
+function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -923,12 +923,8 @@
   evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_open
 
-
-// Función ocultar y mostrar contenido en mobile
 function myFunction() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "none") {

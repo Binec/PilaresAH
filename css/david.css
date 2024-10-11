@@ -60,10 +60,20 @@ button:hover{
     align-content: center;
     margin: 13px 0 13px 0;
 }
+#categoria:hover{
+    color:#991C46;
+    cursor: pointer;
+}
 #categoria:active{
     color:#991C46;
 }
 #categoria:focus{
+    color:#991C46;
+}
+.header-cat:active{
+    color:#991C46;
+}
+.header-cat:focus{
     color:#991C46;
 }
 #Talleres{

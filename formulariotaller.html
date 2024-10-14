@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="talleres_container">
-    <form id="formtaller" method="post" style="display: block;">
+    <form id="scheduleForm" method="post" style="display: block;">
         <div>
             <h1 id="titformulario">Crea un nuevo taller</h1>
         </div>
@@ -20,37 +20,32 @@
             <input type="text" id="descripcion" class="inputdes" name="descripcion" placeholder="Descripcion breve" required>
             <input type="text" id="correo" class="inputcorreocel" name="correo" placeholder="Correo Electrónico" required>
             <input type="text" id="celular" class="inputcorreocel" name="celular" placeholder="Numero celular" required>
-            <div class="container">
-                <h1>Seleccione los días y horarios</h1>
-                <form id="scheduleForm">
-                    <div class="day-time">
-                        <label for="day">Día de la semana:</label>
-                        <select name="day" class="day">
-                        <option value="lunes">Lunes</option>
-                        <option value="martes">Martes</option>
-                        <option value="miércoles">Miércoles</option>
-                        <option value="jueves">Jueves</option>
-                        <option value="viernes">Viernes</option>
-                        <option value="sábado">Sábado</option>
-                        <option value="domingo">Domingo</option>
-                        </select>
-                        <label for="startTime">Hora de inicio:</label>
-                        <select name="startTime" class="startTime">
-                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript -->
-                        </select>
-                        <label for="endTime">Hora de fin:</label>
-                        <select name="endTime" class="endTime">
-                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript -->
-                        </select>
-                    </div>
-                <button type="button" id="addSchedule">Añadir otro día</button>
-                <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </div>    
+            <h1>Seleccione los días y horarios</h1>
+        </div>
+        <div class="day-time">
+            <label for="day">Día de la semana:</label>
+            <select name="day" class="day">
+            <option value="lunes">Lunes</option>
+            <option value="martes">Martes</option>
+            <option value="miércoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+            <option value="sábado">Sábado</option>
+            <option value="domingo">Domingo</option>
+            </select>
+            <label for="startTime">Hora de inicio:</label>
+            <select name="startTime" class="startTime">
+            <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript -->
+            </select>
+            <label for="endTime">Hora de fin:</label>
+            <select name="endTime" class="endTime">
+            <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript -->
+            </select>
+        </div>
+    <button type="button" id="addSchedule">Añadir otro día</button>
+    <button type="submit">Enviar</button>
     </form>
 </div>
-<script src="/js/script.js"></script>
-
+<script src="/js/javadias.js"></script>
 </body>
 </html>

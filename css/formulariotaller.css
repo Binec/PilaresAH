@@ -1,4 +1,4 @@
-#formtaller{
+#scheduleForm{
     width: 420px;
     height: 850px;
     background-color: #FAFAFA;
@@ -24,8 +24,6 @@
 #forminput1{
     display: flex;
     flex-direction: column;
-   
-
 }
 .inputtn{
     margin-top: 10px;
@@ -73,9 +71,7 @@
 #inputhora{
     width: 100px;
     height: 40px;
-    margin-right: 5px;
-    
-    
+    margin-right: 5px;  
     border-radius: 5px;
     padding: 10px;
 }

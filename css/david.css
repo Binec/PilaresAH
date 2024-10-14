@@ -76,6 +76,12 @@ button:hover{
 .header-cat:focus{
     color:#991C46;
 }
+#cat-tittle{
+    font-weight: bolder;
+    color:#155D4F;
+    margin-top: 20px;
+    font-size: 20pt;
+}
 #Talleres{
     man-width: 800px;
     min-width: 300px

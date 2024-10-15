@@ -1,8 +1,8 @@
-document.getElementById("formtaller").onsubmit = async function(event) {
+document.getElementById("scheduleForm").onsubmit = async function(event) {
   event.preventDefault(); // Prevents the default form submission
   
   const formData = new FormData(this);
-  const response = await fetch("https://script.google.com/macros/s/AKfycbx0wT-x89V9HGTqqzy2I-cYj58TwgXvihNc06A5OTGkg7PLPxQ7Plhw44Z-3ec9YB8k/exec", { // Replace with your Google Apps Script URL
+  const response = await fetch("https://script.google.com/macros/s/AKfycbxUUmcK6YFHkS0AbcnINzAQ_x5Wtf_f7VyhhCgVdkl2yZv0eHdWHFlrUXw2Pf74K_81/exec", { // Replace with your Google Apps Script URL
       method: "POST",
       body: formData
   });

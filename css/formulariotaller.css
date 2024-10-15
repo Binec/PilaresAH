@@ -1,8 +1,10 @@
 #scheduleForm{
     width: 420px;
-    height: 850px;
+    height: auto;
     background-color: #FAFAFA;
     text-align: center;
+    padding-left: 30px;
+    padding-bottom: 30px;
 }
 #formconteiner{
     display: flex;

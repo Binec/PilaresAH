@@ -89,7 +89,7 @@ document.getElementById("scheduleForm").onsubmit = async function(event) {
     event.preventDefault(); // Prevents the default form submission
     
     const formData = new FormData(this);
-    const response = await fetch("https://script.google.com/macros/s/AKfycbz_EofVDA0W1q18cwshEN8fT9FsDCX0ZDcHnxzPhUOzMj8FURmL_QLKQW1DsAsjivmB/exec", { // Replace with your Google Apps Script URL
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwSIIZCfjMKYpHibIMEwN4yZTQ7noB3eZ23m6F9N-TtvO_HAm8pdDsa3oGLUm_48WZa/exec", { // Replace with your Google Apps Script URL
         method: "POST",
         body: formData
     });

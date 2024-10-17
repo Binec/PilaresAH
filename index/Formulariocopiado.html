@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formulariocopiado.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form">
+        <form id="scheduleForm" method="post">
+        <div>
+            <h1 id="titformulario">Crea un nuevo taller</h1>
+        </div>
+        <div id="formconteiner">
+            <div id="formizquierdo">
+                <p id="llena">Llena todos los campos</p>
+                <div id="forminput1">
+                    <input type="text" id="inputtn" name="ntaller" placeholder="Nombre del taller" required>
+                    <input type="text" id="inputtn" name="ntallerista" placeholder="Nombre completo" required>
+                    <input type="text" id="inputdes" name="descripciont" placeholder="Descripcion breve" required>
+                </div>
+                <div id="forminput2">
+                    <h3>Seleccione los días y horarios</h3>
+                    <div class="day-time">
+                        <label for="day">Día de la semana:</label>
+                        <select name="day[]" class="day">
+                        <option value="lunes">Lunes</option>
+                        <option value="martes">Martes</option>
+                        <option value="miércoles">Miércoles</option>
+                        <option value="jueves">Jueves</option>
+                        <option value="viernes">Viernes</option>
+                        <option value="sábado">Sábado</option>
+                        <option value="domingo">Domingo</option>
+                        </select>
+                        <label for="startTime">Hora de inicio:</label>
+                        <select name="startTime[]" class="startTime">
+                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript -->
+                        </select>
+                        <label for="endTime">Hora de fin:</label>
+                        <select name="endTime[]" class="endTime">
+                        <!-- Las opciones de tiempo se agregarán dinámicamente con JavaScript -->
+                        </select>
+                    </div>
+                    <button type="button" id="addSchedule">Añadir otro día</button>
+                </div>
+            </div>
+            <div id="formderecho">
+                <div id="forminput3">
+                    <input type="email" id="inputcorreocel" name="tcorreo" placeholder="Correo" required>
+                    <input type="tel" id="inputcorreocel" name="tnumero" placeholder="Numero celular" maxlength="10" required>
+                </div>
+                <div id="botonderecho">
+                    <button type="submit">Crea nuevo taller</button>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+<script src="/js/javadias.js"></script>
+</html>
